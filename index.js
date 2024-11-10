@@ -17,7 +17,8 @@ const splitContentLetterSrart_actived = contentLetterSrart_actived.split("");
 
 document.querySelector(".sticker").addEventListener("click", function () { //Hiệu ứng gõ chữ cho phần mở đầu của bức thư
     document.querySelector(".contentLetter").innerHTML = "";
-    document.querySelector(".startLetter").classList.add("active")
+    document.querySelector(".startLetter").classList.add("    
+        audio.play();
     setTimeout(() => {
         splitContentLetterSrart_actived.forEach((val, index) => {
             setTimeout(() => {
@@ -55,7 +56,7 @@ document.querySelector("#mess").addEventListener("change", function () { //Hiệ
 let audio = document.getElementById("background-music"); // Lấy phần tử audio
 document.querySelector(".recieve").addEventListener("click", () => {
     document.querySelector(".startLetter").classList.add("close");
-    audio.play();
+
     setTimeout(() => {
         document.querySelector(".startForm").classList.add("close");
         setTimeout(() => {
