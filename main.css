@@ -386,7 +386,11 @@ body {
     }
 
     .content.actived {
-        bottom: 100px;
+        /* bottom: 100px; */
+        transform: translate(-50%);
+        width: 95vw;
+        bottom: 0;
+        z-index : 9999;
     }
 }
 
