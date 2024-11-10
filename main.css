@@ -392,6 +392,9 @@ body {
         bottom: 0;
         z-index : 9999;
     }
+    .mainContent{
+        font-size: 23px;
+    }
 }
 
 @keyframes moveLight {
