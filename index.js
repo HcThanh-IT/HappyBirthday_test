@@ -15,13 +15,11 @@ imgLetter.src = "./img/b4bbdb54b7152338d7143cb444a77f09.png"; //Hình ảnh xu�
 
 const splitContentLetterSrart_actived = contentLetterSrart_actived.split("");
 
-
-
-
+let audio = document.getElementById("background-music"); // Lấy phần tử audio
 document.querySelector(".sticker").addEventListener("click", function () { //Hiệu ứng gõ chữ cho phần mở đầu của bức thư
     document.querySelector(".contentLetter").innerHTML = "";
-    document.querySelector(".startLetter").classList.add("    
-       
+    document.querySelector(".startLetter").classList.add("active")
+    audio.play();
     setTimeout(() => {
         splitContentLetterSrart_actived.forEach((val, index) => {
             setTimeout(() => {
@@ -56,11 +54,9 @@ document.querySelector("#mess").addEventListener("change", function () { //Hiệ
         document.querySelector(".mainContent").innerHTML = "";
     }
 })
-
-let audio = document.getElementById("background-music"); // Lấy phần tử audio
 document.querySelector(".recieve").addEventListener("click", () => {
     document.querySelector(".startLetter").classList.add("close");
- audio.play();
+    
     setTimeout(() => {
         document.querySelector(".startForm").classList.add("close");
         setTimeout(() => {
