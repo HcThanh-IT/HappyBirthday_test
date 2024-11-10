@@ -387,10 +387,12 @@ body {
 
     .content.actived {
         /* bottom: 100px; */
-        transform: translate(-50%);
+        /* transform: translate(-50%); */
         width: 95vw;
-        bottom: 0;
+        height: 90vh;
+        bottom: -10px;
         z-index : 9999;
+        
     }
     .mainContent{
         font-size: 23px;
