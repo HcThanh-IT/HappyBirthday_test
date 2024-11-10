@@ -15,7 +15,7 @@ imgLetter.src = "./img/b4bbdb54b7152338d7143cb444a77f09.png"; //Hình ảnh xu�
 
 const splitContentLetterSrart_actived = contentLetterSrart_actived.split("");
 
-let audio = document.getElementById("background-music"); // Lấy phần tử audio
+
 
 
 document.querySelector(".sticker").addEventListener("click", function () { //Hiệu ứng gõ chữ cho phần mở đầu của bức thư
@@ -57,6 +57,7 @@ document.querySelector("#mess").addEventListener("change", function () { //Hiệ
     }
 })
 
+let audio = document.getElementById("background-music"); // Lấy phần tử audio
 document.querySelector(".recieve").addEventListener("click", () => {
     document.querySelector(".startLetter").classList.add("close");
  audio.play();
