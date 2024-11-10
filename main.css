@@ -389,9 +389,10 @@ body {
         /* bottom: 100px; */
         /* transform: translate(-50%); */
         width: 95vw;
-        height: 90vh;
+        height: 85vh;
         bottom: -10px;
         z-index : 9999;
+        max-height: none;
         
     }
     .mainContent{
